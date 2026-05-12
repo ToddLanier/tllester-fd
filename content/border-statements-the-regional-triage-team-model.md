@@ -1,19 +1,19 @@
 ---
 author: "fdadmin"
 categories: 
-  - "event"
-  - "fd-stakeholders"
-  - "projects-we-like"
+ - "event"
+ - "fd-stakeholders"
+ - "projects-we-like"
 date: 2011-06-13
 id: 1109
 slug: "border-statements-the-regional-triage-team-model"
 tags: 
-  - "regional-triage-team-approach"
+ - "regional-triage-team-approach"
 title: "Border Statements & the Regional Triage Team Model"
 type: "freedimensional"
 ---
 
-Border Statements is a community arts initiative and artist residency in Ruili City, Yunnan province, on the China-Burma (Myanmar) border, which uses arts and cultural programs to counteract the adverse effects of the Golden Triangle drug trade, human trafficking and HIV/AIDS on ethnic [http://www.raybani.com/](http://www.raybani.com/ "http://www.raybani.com/") minority youth. Launched in 2007 by Zero Capital Arts, the project relies on a network of international and local artists, educators, volunteers, and businesses to provide artists, culture-bearers, community members, students and youth with opportunities to collaborate and develop strategies for cultural preservation.
+Border Statements is a community arts initiative and artist residency in Ruili City, Yunnan province, on the China-Burma (Myanmar) border, which uses arts and cultural programs to counteract the adverse effects of the Golden Triangle drug trade, human trafficking and HIV/AIDS on ethnic minority youth. Launched in 2007 by Zero Capital Arts, the project relies on a network of international and local artists, educators, volunteers, and businesses to provide artists, culture-bearers, community members, students and youth with opportunities to collaborate and develop strategies for cultural preservation.
 
 [![](/freedimensional/images/Conflict1-565x800.jpg "Conflict")](http://freedimensional.org/2011/06/border-statements-the-regional-triage-team-model/conflict-2/)
 

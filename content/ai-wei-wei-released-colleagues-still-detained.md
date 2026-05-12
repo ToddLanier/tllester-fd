@@ -1,13 +1,13 @@
 ---
 author: "fdadmin"
 categories: 
-  - "action-alerts"
-  - "media"
+ - "action-alerts"
+ - "media"
 date: 2011-06-23
 id: 1146
 slug: "ai-wei-wei-released-colleagues-still-detained"
 tags: 
-  - "ai-weiwei"
+ - "ai-weiwei"
 title: "Ai Weiwei released; colleagues still detained"
 type: "freedimensional"
 ---
@@ -18,4 +18,4 @@ _Text reprinted from the [Washington Post](http://www.washingtonpost.com/world/a
 
 The situation of Ai Weiwei relates somehow to the recent DISPATCH by fD Founder, Todd Lester:
 
-_Liberal, left-leaning journalists can be employed by a variety of institutions, ranging from watchdog investigative initiatives to conservative, multinational news corporations.  For the latter, they may find that it is still possible to be true to their ideas, profession and the progressive [cheap oakley sunglasses](http://www.oakleyonorder.com/ "cheap oakley sunglasses") lens through which they see the world even with an ill-suited affiliation.  Conversely, artists (when they do the work of activists) rarely have the luxury of institutional or corporate affiliation, a feature that typically provides or insures protection and safety when working under adverse conditions._
+_Liberal, left-leaning journalists can be employed by a variety of institutions, ranging from watchdog investigative initiatives to conservative, multinational news corporations.  For the latter, they may find that it is still possible to be true to their ideas, profession and the progressive lens through which they see the world even with an ill-suited affiliation.  Conversely, artists (when they do the work of activists) rarely have the luxury of institutional or corporate affiliation, a feature that typically provides or insures protection and safety when working under adverse conditions._
