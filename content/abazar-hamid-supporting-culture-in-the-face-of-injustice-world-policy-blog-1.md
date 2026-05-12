@@ -19,7 +19,7 @@ type: "freedimensional"
 
 When his last album was censored and he received threats, Hamid and his family moved to Cairo, a city populated by Sudanese refugees. Hamid saw how many of his fellow Sudanese were in exile, and wanted to perform for them. But first he needed a work permit. The money generated from the concert would pay for his permit. It was a Catch-22.
 
-FREEMUSE, an organization that helps oppressed musicians and composers, nominated Hamid to freeDimensional for help. fD granted him $200 for his work permit and Hamid was able to [http://www.usofacomputers.com](http://www.usofacomputers.com "http://www.usofacomputers.com") set up his first performances in a local art space. This experience led to the creation of a Creative Resistance Fund, which gives grants to help and support artists in tyrannical regimes.
+FREEMUSE, an organization that helps oppressed musicians and composers, nominated Hamid to freeDimensional for help. fD granted him $200 for his work permit and Hamid was able to set up his first performances in a local art space. This experience led to the creation of a Creative Resistance Fund, which gives grants to help and support artists in tyrannical regimes.
 
 __by **Vivian Lee**__
 
