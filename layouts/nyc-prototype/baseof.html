@@ -2,7 +2,7 @@
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "head.html" . }}
-  <link rel="stylesheet" href="/nyc-prototype/nyc-style.css">
+  <link rel="stylesheet" href="{{ "nyc-prototype/nyc-style.css" | relURL }}">
   <style>
     html, body {
       background: #fff;
@@ -35,10 +35,10 @@
     {{/* Navbar — transparent on homepage, solid on inner pages */}}
     <div class="nyc-navbar {{ if .IsSection }}navbar-transparent{{ else }}navbar-solid{{ end }}">
       <div class="nyc-navbar-inner">
-        <a href="{{ "/nyc-prototype/" | relURL }}" class="nyc-navbar-brand">New York City Artist Safe Haven Prototype</a>
+        <a href="{{ "nyc-prototype/" | relURL }}" class="nyc-navbar-brand">New York City Artist Safe Haven Prototype</a>
         <ul class="nyc-nav">
-          <li><a href="{{ "/nyc-prototype/about/" | relURL }}">About</a></li>
-          <li><a href="{{ "/nyc-prototype/artists/" | relURL }}">Artists</a></li>
+          <li><a href="{{ "nyc-prototype/about/" | relURL }}">About</a></li>
+          <li><a href="{{ "nyc-prototype/artists/" | relURL }}">Artists</a></li>
         </ul>
       </div>
     </div>
@@ -51,8 +51,8 @@
     <div class="nyc-footer">
       <div class="nyc-footer-inner">
         <ul class="nyc-footer-menu">
-          <li><a href="{{ "/nyc-prototype/" | relURL }}">Home</a></li>
-          <li><a href="{{ "/nyc-prototype/artists/" | relURL }}">Artists</a></li>
+          <li><a href="{{ "nyc-prototype/" | relURL }}">Home</a></li>
+          <li><a href="{{ "nyc-prototype/artists/" | relURL }}">Artists</a></li>
         </ul>
         <div class="nyc-footer-copy">&copy; {{ now.Year }} NYC Artist Safe Haven Prototype</div>
       </div>

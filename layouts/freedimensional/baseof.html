@@ -2,7 +2,7 @@
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "head.html" . }}
-  <link rel="stylesheet" href="/freedimensional/fd-style.css">
+  <link rel="stylesheet" href="{{ "freedimensional/fd-style.css" | relURL }}">
   <style>
     html, body {
       background: #e5e6e8;
@@ -39,11 +39,11 @@
     {{/* Logo Banner — original FD header with fD logo + world map + CRF branding */}}
     <div class="fd-logobanner">
       <div class="fd-banner-images">
-        <a href="{{ "/" | relURL }}">
-          <img src="{{ "/freedimensional/images/fd-logo-banner.gif" | relURL }}" alt="freeDimensional" class="fd-banner-left">
+        <a href="{{ "" | relURL }}">
+          <img src="{{ "freedimensional/images/fd-logo-banner.gif" | relURL }}" alt="freeDimensional" class="fd-banner-left">
         </a>
-        <a href="{{ "/creativeresistancefund/" | relURL }}">
-          <img src="{{ "/freedimensional/images/fd-banner-full.jpg" | relURL }}" alt="Creative Resistance Fund" class="fd-banner-right">
+        <a href="{{ "creativeresistancefund/" | relURL }}">
+          <img src="{{ "freedimensional/images/fd-banner-full.jpg" | relURL }}" alt="Creative Resistance Fund" class="fd-banner-right">
         </a>
       </div>
     </div>
@@ -51,48 +51,48 @@
     {{/* Navigation Bar */}}
     <nav class="fd-navbar">
       <ul class="fd-nav">
-        <li><a href="{{ "/" | relURL }}">Home</a></li>
+        <li><a href="{{ "" | relURL }}">Home</a></li>
         <li>
-          <a href="{{ "/pages/about/" | relURL }}">About</a>
+          <a href="{{ "pages/about/" | relURL }}">About</a>
           <ul class="fd-sub-menu">
-            <li><a href="{{ "/pages/history/" | relURL }}">History</a></li>
-            <li><a href="{{ "/pages/people/" | relURL }}">People</a></li>
-            <li><a href="{{ "/pages/partners/" | relURL }}">Partners</a></li>
+            <li><a href="{{ "pages/history/" | relURL }}">History</a></li>
+            <li><a href="{{ "pages/people/" | relURL }}">People</a></li>
+            <li><a href="{{ "pages/partners/" | relURL }}">Partners</a></li>
             <li>
-              <a href="{{ "/pages/stakeholders/" | relURL }}">Stakeholders</a>
+              <a href="{{ "pages/stakeholders/" | relURL }}">Stakeholders</a>
               <ul class="fd-sub-menu">
                 {{ range where (site.GetPage "/pages").Pages "Params.slug" "in" (slice "chaw-ei-thein" "abazar-hamid" "issa-nyaphaga" "hua-ze") }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                 {{ end }}
               </ul>
             </li>
-            <li><a href="{{ "/pages/future/" | relURL }}">Future</a></li>
+            <li><a href="{{ "pages/future/" | relURL }}">Future</a></li>
           </ul>
         </li>
         <li>
-          <a href="{{ "/pages/resources/" | relURL }}">Resources</a>
+          <a href="{{ "pages/resources/" | relURL }}">Resources</a>
           <ul class="fd-sub-menu">
-            <li><a href="{{ "/pages/censorship/" | relURL }}">Censorship</a></li>
-            <li><a href="{{ "/pages/education/" | relURL }}">Education</a></li>
-            <li><a href="{{ "/pages/health/" | relURL }}">Health</a></li>
-            <li><a href="{{ "/pages/housing/" | relURL }}">Housing</a></li>
-            <li><a href="{{ "/pages/human-rights/" | relURL }}">Human Rights</a></li>
-            <li><a href="{{ "/pages/legal-issues/" | relURL }}">Legal Issues</a></li>
-            <li><a href="{{ "/pages/mobility/" | relURL }}">Mobility</a></li>
-            <li><a href="{{ "/pages/money/" | relURL }}">Money</a></li>
-            <li><a href="{{ "/pages/persecution/" | relURL }}">Persecution</a></li>
+            <li><a href="{{ "pages/censorship/" | relURL }}">Censorship</a></li>
+            <li><a href="{{ "pages/education/" | relURL }}">Education</a></li>
+            <li><a href="{{ "pages/health/" | relURL }}">Health</a></li>
+            <li><a href="{{ "pages/housing/" | relURL }}">Housing</a></li>
+            <li><a href="{{ "pages/human-rights/" | relURL }}">Human Rights</a></li>
+            <li><a href="{{ "pages/legal-issues/" | relURL }}">Legal Issues</a></li>
+            <li><a href="{{ "pages/mobility/" | relURL }}">Mobility</a></li>
+            <li><a href="{{ "pages/money/" | relURL }}">Money</a></li>
+            <li><a href="{{ "pages/persecution/" | relURL }}">Persecution</a></li>
           </ul>
         </li>
         <li>
-          <a href="{{ "/pages/resources-for/" | relURL }}">Resources for&hellip;</a>
+          <a href="{{ "pages/resources-for/" | relURL }}">Resources for&hellip;</a>
           <ul class="fd-sub-menu">
-            <li><a href="{{ "/pages/journalists/" | relURL }}">Journalists</a></li>
-            <li><a href="{{ "/pages/scholars-researchers-educators/" | relURL }}">Scholars &amp; Educators</a></li>
-            <li><a href="{{ "/pages/art-spaces/" | relURL }}">Art Spaces</a></li>
+            <li><a href="{{ "pages/journalists/" | relURL }}">Journalists</a></li>
+            <li><a href="{{ "pages/scholars-researchers-educators/" | relURL }}">Scholars &amp; Educators</a></li>
+            <li><a href="{{ "pages/art-spaces/" | relURL }}">Art Spaces</a></li>
           </ul>
         </li>
-        <li><a href="{{ "/pages/get-involved/" | relURL }}">Get Involved</a></li>
-        <li><a href="{{ "/pages/press/" | relURL }}">Press</a></li>
+        <li><a href="{{ "pages/get-involved/" | relURL }}">Get Involved</a></li>
+        <li><a href="{{ "pages/press/" | relURL }}">Press</a></li>
       </ul>
     </nav>
 
@@ -113,8 +113,8 @@
         </div>
 
         <div class="fd-widget">
-          <a href="{{ "/creativeresistancefund/" | relURL }}">
-            <img src="{{ "/freedimensional/images/donate-button.png" | relURL }}" alt="Donate Now to Support Creative Activism" style="max-width:100%; height:auto;">
+          <a href="{{ "creativeresistancefund/" | relURL }}">
+            <img src="{{ "freedimensional/images/donate-button.png" | relURL }}" alt="Donate Now to Support Creative Activism" style="max-width:100%; height:auto;">
           </a>
         </div>
 
@@ -122,22 +122,22 @@
           <div class="fd-widget-title">what we do</div>
           <p class="fd-widget-text"><strong>Broadly</strong><br>Support culture in the service of free expression, justice &amp; equality.</p>
           <p class="fd-widget-text"><strong>Specifically</strong><br>Host activists in art spaces and use cultural resources to strengthen their work.</p>
-          <p class="fd-widget-text"><a href="{{ "/pages/about/" | relURL }}">Find out more</a></p>
+          <p class="fd-widget-text"><a href="{{ "pages/about/" | relURL }}">Find out more</a></p>
         </div>
 
         <div class="fd-widget">
           <div class="fd-widget-title">connect with us</div>
           <div class="fd-social-icons">
-            <img src="{{ "/freedimensional/images/button-rss.jpg" | relURL }}" alt="RSS">
-            <img src="{{ "/freedimensional/images/button-facebook.jpg" | relURL }}" alt="Facebook">
-            <img src="{{ "/freedimensional/images/button-twitter.jpg" | relURL }}" alt="Twitter">
-            <img src="{{ "/freedimensional/images/button-vimeo.jpg" | relURL }}" alt="Vimeo">
+            <img src="{{ "freedimensional/images/button-rss.jpg" | relURL }}" alt="RSS">
+            <img src="{{ "freedimensional/images/button-facebook.jpg" | relURL }}" alt="Facebook">
+            <img src="{{ "freedimensional/images/button-twitter.jpg" | relURL }}" alt="Twitter">
+            <img src="{{ "freedimensional/images/button-vimeo.jpg" | relURL }}" alt="Vimeo">
           </div>
         </div>
 
         <div class="fd-widget">
           <div class="fd-widget-title">fD story</div>
-          <img src="{{ "/freedimensional/images/fd-brochure.jpg" | relURL }}" alt="fD Brochure" style="max-width:100%; height:auto; margin-bottom:5px;">
+          <img src="{{ "freedimensional/images/fd-brochure.jpg" | relURL }}" alt="fD Brochure" style="max-width:100%; height:auto; margin-bottom:5px;">
           <p class="fd-widget-text"><a href="#">Download brochure</a></p>
         </div>
 
@@ -149,18 +149,18 @@
         <div class="fd-widget">
           <div class="fd-widget-title">creative resistance fund</div>
           <p class="fd-widget-text">The Creative Resistance Fund provides small distress grants to people in danger due to their use of creativity to fight injustice.</p>
-          <p class="fd-widget-text"><a href="{{ "/creativeresistancefund/" | relURL }}">Find out more</a></p>
+          <p class="fd-widget-text"><a href="{{ "creativeresistancefund/" | relURL }}">Find out more</a></p>
         </div>
 
         <div class="fd-widget">
           <div class="fd-widget-title">creative safe haven</div>
-          <img src="{{ "/freedimensional/images/new-tactics.jpg" | relURL }}" alt="New Tactics in Human Rights" style="max-width:100%; height:auto; margin-bottom:5px;">
-          <p class="fd-widget-text"><a href="{{ "/pages/creative-safe-haven/" | relURL }}">How-to hosting guide available in English &amp; Spanish</a></p>
+          <img src="{{ "freedimensional/images/new-tactics.jpg" | relURL }}" alt="New Tactics in Human Rights" style="max-width:100%; height:auto; margin-bottom:5px;">
+          <p class="fd-widget-text"><a href="{{ "pages/creative-safe-haven/" | relURL }}">How-to hosting guide available in English &amp; Spanish</a></p>
         </div>
 
         <div class="fd-widget">
           <div class="fd-widget-title">projects we like</div>
-          <img src="{{ "/freedimensional/images/wwb-logo.jpg" | relURL }}" alt="Words Without Borders" style="max-width:100%; height:auto;">
+          <img src="{{ "freedimensional/images/wwb-logo.jpg" | relURL }}" alt="Words Without Borders" style="max-width:100%; height:auto;">
         </div>
 
         <div class="fd-widget">

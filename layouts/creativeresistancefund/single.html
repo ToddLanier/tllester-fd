@@ -6,11 +6,11 @@
   {{ with .Date }}<span>{{ .Format "January 2, 2006" }}</span>{{ end }}
   {{ with .Params.categories }}
     | Categories:
-    {{ range $i, $cat := . }}{{ if $i }}, {{ end }}<a href="{{ "/categories/" | relURL }}{{ $cat | urlize }}/">{{ $cat }}</a>{{ end }}
+    {{ range $i, $cat := . }}{{ if $i }}, {{ end }}<a href="{{ "categories/" | relURL }}{{ $cat | urlize }}/">{{ $cat }}</a>{{ end }}
   {{ end }}
   {{ with .Params.tags }}
     | Tags:
-    {{ range $i, $tag := . }}{{ if $i }}, {{ end }}<a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}/">{{ $tag }}</a>{{ end }}
+    {{ range $i, $tag := . }}{{ if $i }}, {{ end }}<a href="{{ "tags/" | relURL }}{{ $tag | urlize }}/">{{ $tag }}</a>{{ end }}
   {{ end }}
 </div>
 

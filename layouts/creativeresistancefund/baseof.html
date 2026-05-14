@@ -2,7 +2,7 @@
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "head.html" . }}
-  <link rel="stylesheet" href="/creativeresistancefund/crf-style.css">
+  <link rel="stylesheet" href="{{ "creativeresistancefund/crf-style.css" | relURL }}">
   <style>
     html, body {
       background: #E0E1E2;
@@ -35,18 +35,18 @@
 
     {{/* Header with CRF logo */}}
     <div class="crf-header">
-      <a href="{{ "/creativeresistancefund/" | relURL }}">
-        <img src="{{ "/creativeresistancefund/images/crf-header-logo.gif" | relURL }}" alt="Creative Resistance Fund">
+      <a href="{{ "creativeresistancefund/" | relURL }}">
+        <img src="{{ "creativeresistancefund/images/crf-header-logo.gif" | relURL }}" alt="Creative Resistance Fund">
       </a>
     </div>
 
     {{/* Navigation */}}
     <nav class="crf-nav">
       <ul>
-        <li><a href="{{ "/creativeresistancefund/" | relURL }}">home</a></li>
-        <li><a href="{{ "/creativeresistancefund/about/" | relURL }}">about</a></li>
-        <li><a href="{{ "/creativeresistancefund/resources/" | relURL }}">resources</a></li>
-        <li><a href="{{ "/freedimensional/" | relURL }}">freedimensional</a></li>
+        <li><a href="{{ "creativeresistancefund/" | relURL }}">home</a></li>
+        <li><a href="{{ "creativeresistancefund/about/" | relURL }}">about</a></li>
+        <li><a href="{{ "creativeresistancefund/resources/" | relURL }}">resources</a></li>
+        <li><a href="{{ "freedimensional/" | relURL }}">freedimensional</a></li>
       </ul>
     </nav>
 
@@ -62,16 +62,16 @@
       <div class="crf-sidebar">
         <div class="crf-widget">
           <div class="crf-sidebar-top">
-            <a href="{{ "/creativeresistancefund/donate/" | relURL }}" class="crf-donate-btn">Donate to <strong>CRF</strong></a>
-            <a href="{{ "/creativeresistancefund/index.xml" | relURL }}">
-              <img src="{{ "/creativeresistancefund/images/rss-icon.gif" | relURL }}" alt="RSS">
+            <a href="{{ "creativeresistancefund/donate/" | relURL }}" class="crf-donate-btn">Donate to <strong>CRF</strong></a>
+            <a href="{{ "creativeresistancefund/index.xml" | relURL }}">
+              <img src="{{ "creativeresistancefund/images/rss-icon.gif" | relURL }}" alt="RSS">
             </a>
           </div>
         </div>
         <div class="crf-widget">
           <div class="crf-widget-title">featured case study</div>
-          <a href="{{ "/freedimensional/pages/abazar-hamid/" | relURL }}">
-            <img src="{{ "/creativeresistancefund/images/abazar-guitar.jpg" | relURL }}" alt="Abazar Hamid" style="max-width:100%; height:auto; margin-bottom:5px;">
+          <a href="{{ "freedimensional/pages/abazar-hamid/" | relURL }}">
+            <img src="{{ "creativeresistancefund/images/abazar-guitar.jpg" | relURL }}" alt="Abazar Hamid" style="max-width:100%; height:auto; margin-bottom:5px;">
             <span class="crf-case-study-name">abazar hamid</span>
           </a>
         </div>
@@ -79,13 +79,13 @@
           <div class="crf-widget-title">partners</div>
           <div class="crf-partners">
             <a href="http://www.freedomtocreate.com/">
-              <img src="{{ "/creativeresistancefund/images/freedom-to-create.gif" | relURL }}" alt="Freedom to Create">
+              <img src="{{ "creativeresistancefund/images/freedom-to-create.gif" | relURL }}" alt="Freedom to Create">
             </a>
             <a href="http://www.pserrano.com/">
-              <img src="{{ "/creativeresistancefund/images/serrano-logo.gif" | relURL }}" alt="Serrano">
+              <img src="{{ "creativeresistancefund/images/serrano-logo.gif" | relURL }}" alt="Serrano">
             </a>
             <a href="http://www.sigrid-rausing-trust.org/">
-              <img src="{{ "/creativeresistancefund/images/sigrid-rausing-trust.gif" | relURL }}" alt="Sigrid Rausing Trust">
+              <img src="{{ "creativeresistancefund/images/sigrid-rausing-trust.gif" | relURL }}" alt="Sigrid Rausing Trust">
             </a>
           </div>
         </div>
