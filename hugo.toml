@@ -27,11 +27,11 @@ title = 'freeDimensional'
     name = 'NYC Prototype'
     url = 'nyc-prototype/'
     weight = 35
-    # [[menus.main]]
-    # identifier = 'Search'
-    # name = 'Search'
-    # url = 'search/'
-    # weight = 40
+  [[menus.main]]
+    identifier = 'Search'
+    name = 'Search'
+    url = 'search/'
+    weight = 40
 
 [sitemap]
   changefreq = "weekly"
