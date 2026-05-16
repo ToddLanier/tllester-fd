@@ -4,37 +4,17 @@
   <a href="https://tllester.info/">&larr; back to tllester.info</a>
 
 <div>
+  <button class="search-toggle" aria-label="Toggle search">
+    <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </button>
 
-  {{ if not (in .Title "Search") }}
-                        {{ with .GetPage "search" }}
-            <a href="{{ .Permalink }}" title="{{ .Title }}">
-<svg
-   width="20"
-   height="20"
-   fill="currentColor"
-   class="bi bi-search"
-   viewBox="0 0 20 20"
-   version="1.1"
-   id="svg1"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1" />
-  <path
-     d="m 13.960497,12.974789 a 7.7277111,8.1542663 0 1 0 -1.66443,1.756303 v 0 q 0.523107,0.125451 1.165101,0.125451 l 4.636627,4.892559 a 1.1888787,1.2545025 0 0 0 1.66443,-1.756303 l -4.636627,-4.89256 A 1.1888787,1.2545025 0 0 0 15.00671,12.974789 Z M 14.31716,8.2076799 a 6.5388325,6.8997636 0 1 1 -13.0776638,0 6.5388325,6.8997636 0 0 1 13.0776638,0"
-     id="path1"
-     style="stroke-width:1.22126" />
-</svg>
-</a>
-            {{ end }}
-{{ end}}
-     
-<button
-    type="button"
-    data-theme-toggle
-    aria-label="Change to light theme"
-    class="theme-toggle theme-switch"
-  >🌞</button>
+  <button
+      type="button"
+      data-theme-toggle
+      aria-label="Change to light theme"
+      class="theme-toggle theme-switch"
+    >🌞</button>
 </div>
 
 </div>
@@ -44,6 +24,12 @@
    <img src="{{ "fd-crf-asn.png" | relURL }}">
 
 </a>
+
+<div class="search-drawer" aria-expanded="false" role="region">
+  <form role="search" method="get" class="searchform" action="{{ .Site.BaseURL }}search/">
+    <input type="search" class="search-input" placeholder="Search …" value="" name="q">
+  </form>
+</div>
 
 <nav>
 

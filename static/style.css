@@ -386,3 +386,224 @@ footer {
     align-items: center;
   }
 }
+
+/* Search drawer styles */
+.search-drawer {
+  display: none;
+  background: var(--color-bg);
+  width: 100%;
+  padding: 2em 0;
+}
+
+.search-drawer .search-input {
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  background: transparent;
+  color: var(--color-fg);
+      border: 1px solid #ef3b36;
+    padding: .5em;
+}
+
+.search-drawer .search-input:focus,
+.search-drawer .search-input:active {
+  box-shadow: none;
+  background: transparent;
+  outline: none;
+}
+
+.search-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--color-fg, #1a1a1a);
+  border: none;
+  background: transparent;
+  font-size: 1.2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pin wrappers so absolute button anchors to their top-right */
+.fd-wrap,
+.crf-page,
+.asn-site,
+.nyc-site {
+  position: relative;
+}
+
+/* Main baseof: keep button in .prefs flex flow */
+.prefs .search-toggle {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* FD: search icon in red navbar, centered vertically, white */
+.fd-navbar .search-toggle {
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/* CRF: search icon in white navbar, red */
+.crf-nav {
+  position: relative;
+}
+.crf-nav .search-toggle {
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #f33;
+}
+
+/* ASN: search icon in bordered navbar, dark */
+.asn-nav {
+  position: relative;
+}
+.asn-nav .search-toggle {
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #404040;
+}
+
+/* NYC: search icon in top navbar, grouped right with About/Artists */
+.nyc-navbar-inner .nyc-nav {
+  margin-left: auto;
+}
+.nyc-navbar-inner .search-toggle {
+  position: static;
+  margin-left: 0;
+  width: auto;
+  height: auto;
+  transform: none;
+}
+.nyc-navbar.navbar-transparent .search-toggle {
+  color: #fff;
+}
+.nyc-navbar.navbar-solid .search-toggle {
+  color: #363537;
+}
+
+.search-toggle .icon-search {
+  display: block;
+}
+
+.search-toggle .icon-close {
+  display: none;
+}
+
+.search-toggle .fa-times {
+  display: none;
+}
+
+.search-toggle:hover {
+  color: #62707c;
+  cursor: pointer;
+}
+
+.site-header.search-drawer-open .search-drawer {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .search-toggle {
+    display: none;
+  }
+}
+
+/* Search results styling */
+.search-results {
+  padding: 2em 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-results h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.search-query {
+  font-size: 1.1em;
+  color: var(--ahover-color);
+  margin-bottom: 1.5em;
+}
+
+.search-result-list {
+  margin-bottom: 2em;
+}
+
+.search-result-item {
+  margin-bottom: 2.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+}
+
+.search-result-item h2 a {
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+.search-result-item h2 a:hover {
+  color: var(--ahover-color);
+}
+
+.search-result-meta {
+  font-size: 0.9em;
+  color: var(--ahover-color);
+  margin-bottom: 0.5em;
+}
+
+.search-result-meta span {
+  margin-right: 1em;
+}
+
+.search-result-item .excerpt {
+  color: var(--color-fg);
+  line-height: 1.6;
+  margin-top: 0.5em;
+}
+
+.result-count {
+  font-weight: bold;
+  margin-top: 1.5em;
+  color: var(--ahover-color);
+}
+
+.no-results {
+  padding: 2em;
+  text-align: center;
+  color: var(--ahover-color);
+}
+
+.no-results p {
+  margin-bottom: 1em;
+}
+
+.no-results a {
+  color: var(--color-fg);
+  font-weight: bold;
+}

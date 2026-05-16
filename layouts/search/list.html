@@ -1,13 +1,40 @@
 {{ define "main" }}
-    <h1>{{ .Page.Title }}</h1>
-    {{ .Content }}
-    {{ range sort .Pages "Date" "desc" }}
-        {{ if not .Params.private }}
-        <div class="post">
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .PublishDate.Format "Jan. 2, 2006" }} - 
-                {{ .Title }}</a></h1>
-            <p>{{ .Summary }}</p>
-        </div>
-        {{ end }}
+<div class="search-results">
+  <h1>Search Results</h1>
+  <p class="search-query">Enter a search term in the box above.</p>
+
+  <div class="search-result-list">
+    {{ range where site.RegularPages "Params.private" "ne" true }}
+      {{ if or (eq .Section "freedimensional") (eq .Section "creativeresistancefund") (eq .Section "artistsafety") (eq .Section "nyc-prototype") (eq .Section "pages") (eq .Section "") }}
+        <article class="search-result-item">
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <div class="search-result-meta">
+            {{ if .Date }}
+              <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            {{ end }}
+            {{ if .Type }}
+              <span class="type">{{ .Type }}</span>
+            {{ end }}
+          </div>
+          {{ with .Summary }}
+            <p class="excerpt">{{ . }}</p>
+          {{ else }}
+            {{ with truncate 150 .Content }}
+              <p class="excerpt">{{ . }}...</p>
+            {{ end }}
+          {{ end }}
+        </article>
+      {{ end }}
     {{ end }}
+  </div>
+
+  <p class="result-count">Total posts and pages available.</p>
+
+  <div class="no-results" style="display: none;">
+    <p>No results found.</p>
+    <p><a href="{{ .Site.BaseURL }}">Browse the site</a>.</p>
+  </div>
+</div>
+
+<script src="{{ "js/search.js" | relURL }}"></script>
 {{ end }}

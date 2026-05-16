@@ -34,6 +34,13 @@
 </head>
 <body>
 
+  <!-- Global Search Drawer -->
+  <div class="search-drawer" aria-expanded="false" role="region">
+    <form role="search" method="get" class="searchform" action="{{ .Site.BaseURL }}search/">
+      <input type="search" class="search-input" placeholder="Search …" value="" name="q">
+    </form>
+  </div>
+
   <div class="fd-wrap">
 
     {{/* Logo Banner — original FD header with fD logo + world map + CRF branding */}}
@@ -94,6 +101,11 @@
         <li><a href="{{ "pages/get-involved/" | relURL }}">Get Involved</a></li>
         <li><a href="{{ "pages/press/" | relURL }}">Press</a></li>
       </ul>
+
+      <!-- Search Toggle (top-right of navbar) -->
+      <button class="search-toggle" aria-label="Toggle search">
+        <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
     </nav>
 
     {{/* Main Content Area — 2 columns: content + right sidebar */}}
@@ -187,5 +199,6 @@
 
   </div>
 
+  <script src="{{ "js/main.js" | relURL }}"></script>
 </body>
 </html>
