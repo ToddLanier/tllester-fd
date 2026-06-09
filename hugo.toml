@@ -1,10 +1,25 @@
 baseURL = 'https://fd.tllester.info/'
 languageCode = 'en-us'
 title = 'freeDimensional'
+enableRobotsTXT = true
 
 [params]
   description = 'a hybrid consultancy and volunteer network supporting artists on the frontlines of social change'
   logo = 'fd-crf-asn.png'
+  author = 'Todd Lanier Lester'
+  ogImage = 'fd-crf-asn.png'
+  googleSiteVerification = ''
+
+  [params.schema]
+    type = 'Organization'
+    name = 'freeDimensional'
+    alternateName = ['free Dimensional', 'freedimensional.org', 'Artist Safety', 'ArtistSafety.net', 'artistsafety.net', 'Creative Resistance Fund', 'creativeresistancefund.org']
+    sameAs = [
+      'https://freedimensional.org/',
+      'https://artistsafety.net/',
+      'https://creativeresistancefund.org/',
+      'https://tllester.info/',
+    ]
 
 [menus]
   [[menus.main]]
